@@ -30,29 +30,17 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        // I have created a dummy site for us to use with the plugins we discussed
-        baseUrl: "using-wordpress-with-gatsby.iamtimsmith.com",
-        protocol: "https",
-        hostingWPCOM: false,
-        // We will be using some advanced custom fields
+        baseUrl: "stuartmyerscom.wordpress.com",
+        hostingWPCOM: true,
         useACF: true,
-        acfOptionPageIds: [],
-        verboseOutput: false,
-        perPage: 100,
-        searchAndReplaceContentUrls: {
-          sourceUrl: "https://www.using-wordpress-with-gatsby.iamtimsmith.com",
-          replacementUrl: "https://localhost:8000",
-        },
-        // Set how many simultaneous requests are sent at once.
-        concurrentRequests: 10,
         includedRoutes: [
           "**/categories",
           "**/posts",
           "**/pages",
           "**/media",
           "**/tags",
-          "**/taxonomies",
-          "**/users",
+          // "**/taxonomies",
+          // "**/users",
         ],
         excludedRoutes: [],
         normalizer: function({ entities }) {
