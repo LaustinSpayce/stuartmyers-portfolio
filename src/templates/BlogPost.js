@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 const BlogPostTemplate = ({ data }) => (
   <Layout>
     {console.log(data.wordpressPost.jetpack_featured_media_url)}
+    {console.log(data.wordpressPost.id)}
     <SEO
       title={data.wordpressPost.title}
       description={data.wordpressPost.excerpt}
@@ -27,6 +28,7 @@ export default BlogPostTemplate
 export const query = graphql`
   query($id: Int!) {
     wordpressPost(wordpress_id: { eq: $id }) {
+      id
       content
       date
       format
