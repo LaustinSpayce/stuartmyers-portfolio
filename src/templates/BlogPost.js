@@ -16,7 +16,7 @@ const BlogPostTemplate = ({ data }) => (
     <p>
       Written on {data.wordpressPost.date}
     </p>
-    <img src={data.wordpressPost.jetpack_featured_media_url}/>
+    <Img fixed={data.wordpressPost.jetpack_featured_media_url.localFile.childImageSharp.fixed}/>
     <div
       style={{ marginTop: 20 }}
       dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }}
@@ -36,7 +36,15 @@ export const query = graphql`
       title
       type
       excerpt
-      jetpack_featured_media_url
+      jetpack_featured_media_url {
+        localFile {
+          childImageSharp {
+            fixed(width: 600) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
     }
   }
 `

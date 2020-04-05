@@ -6,6 +6,9 @@
 
 // You can delete this file if you're not using it
 const path = require(`path`)
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
