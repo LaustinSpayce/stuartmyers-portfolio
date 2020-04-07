@@ -16,7 +16,7 @@ const BlogPostTemplate = ({ data }) => (
     <p>
       Written on {data.wordpressPost.date}
     </p>
-    <Img fixed={data.wordpressPost.jetpack_featured_media_url.localFile.childImageSharp.fixed}/>
+    <Img fluid={data.wordpressPost.jetpack_featured_media_url.localFile.childImageSharp.fluid}/>
     <div
       style={{ marginTop: 20 }}
       dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }}
@@ -39,8 +39,8 @@ export const query = graphql`
       jetpack_featured_media_url {
         localFile {
           childImageSharp {
-            fixed(width: 600) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 920, maxHeight: 420) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
