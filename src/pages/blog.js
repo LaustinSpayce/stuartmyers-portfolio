@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
+import Moment from 'moment'
 
 const BlogPosts = ({ data }) => {
 
@@ -27,7 +28,7 @@ const BlogPosts = ({ data }) => {
                 {title}
               </Link>
             </h3>
-            <small>{node.date}</small>
+            <small>{Moment(node.date).fromNow()}</small>
           </header>
           <section>
             {fluidImg}
