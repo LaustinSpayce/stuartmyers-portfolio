@@ -7,6 +7,7 @@ module.exports = {
     title: `Stuart Myers`,
     description: `Full Stack Developer`,
     author: `Stuart Myers`,
+    siteUrl: `https://clever-bohr-d6b52c.netlify.com/`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
