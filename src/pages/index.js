@@ -1,17 +1,19 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import FrontPageLayout from "../components/frontpagelayout"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
+  <FrontPageLayout>
     <SEO title="Home" />
-    <h1>Hi There!</h1>
-    <p>Welcome to Stuart's website.</p>
-    <p>I am a full stack engineer trying to do some stuff.</p>
-    <Link to="/blog/">Visit my blog</Link>
-  </Layout>
+    <h1>Hello</h1>
+    <h2>Stuart Myers</h2>
+    <p>Full Stack Web Developer bsed in Singapore</p>
+    <Link to="/blog/">Portfolio</Link>
+    <Link to="/about/">About</Link>
+    <Link to="/contact/">Contact</Link>
+  </FrontPageLayout>
 )
 
 export default IndexPage
