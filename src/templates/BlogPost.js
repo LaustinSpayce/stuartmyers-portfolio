@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/header"
+import Moment from "moment"
 
 const BlogPostTemplate = ({ data }) => {
   const PostHeroImage = data.wordpressPost.jetpack_featured_media_url ? 
@@ -11,15 +12,13 @@ const BlogPostTemplate = ({ data }) => {
   <div></div>
   return (
   <Layout>
-    {console.log(data.wordpressPost.jetpack_featured_media_url)}
-    {console.log(data.wordpressPost.id)}
     <SEO
       title={data.wordpressPost.title}
       description={data.wordpressPost.excerpt}
     />
     <h1>{data.wordpressPost.title}</h1>
     <p>
-      Written on {data.wordpressPost.date}
+      Written {Moment(data.wordpressPost.date).fromNow()}
     </p>
     {PostHeroImage}
     <div
