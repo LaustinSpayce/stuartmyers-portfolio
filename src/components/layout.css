@@ -8,6 +8,14 @@
   src: url("../../static/fonts/manrope/Manrope-Bold.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../static/fonts/lora/lora-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+}
+
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -210,7 +218,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: Lora, georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
