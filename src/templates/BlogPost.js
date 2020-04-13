@@ -23,7 +23,7 @@ const BlogPostTemplate = ({ data }) => {
         title={data.wordpressPost.title}
         description={data.wordpressPost.excerpt}
       />
-      <h1 dangerouslySetInnerHTML={{ __html: data.wordpressPost.title}}></h1>
+      <h1 dangerouslySetInnerHTML={{ __html: data.wordpressPost.title }}></h1>
       <p>Written {Moment(data.wordpressPost.date).fromNow()}</p>
       {PostHeroImage}
       <div

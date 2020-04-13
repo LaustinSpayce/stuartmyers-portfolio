@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
@@ -34,6 +34,10 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
+        <div>
+          <Link to="/blog/">Portfolio</Link> - <Link to="/about/">About</Link> -{" "}
+          <Link to="/contact/">Contact</Link>
+        </div>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}

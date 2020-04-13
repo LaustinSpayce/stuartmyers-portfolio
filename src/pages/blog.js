@@ -10,7 +10,7 @@ const BlogPosts = ({ data }) => {
   return (
     <Layout>
       {posts.map(({ node }, index) => {
-        return (<BlogPostSummary node={ node } key={index} />)
+        return <BlogPostSummary node={node} key={index} />
       })}
     </Layout>
   )

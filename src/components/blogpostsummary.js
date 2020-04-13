@@ -4,7 +4,6 @@ import Img from "gatsby-image"
 import Moment from "moment"
 
 const BlogPostSummary = (props) => {
-  
   let fluidImg = props.node.jetpack_featured_media_url ? (
     <Img
       fluid={
@@ -21,8 +20,11 @@ const BlogPostSummary = (props) => {
     <article key={props.node.slug}>
       <header>
         <h3>
-          <Link style={{ boxShadow: `none` }} to={link} dangerouslySetInnerHTML={{ __html: title}}>
-          </Link>
+          <Link
+            style={{ boxShadow: `none` }}
+            to={link}
+            dangerouslySetInnerHTML={{ __html: title }}
+          ></Link>
         </h3>
         <small>{Moment(props.node.date).fromNow()}</small>
       </header>

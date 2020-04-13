@@ -7,12 +7,30 @@ import SEO from "../components/seo"
 const SecondPage = () => (
   <Layout>
     <SEO title="Contact" />
-    <h1>Contact Page</h1>
-    <p>
-      This page will contain information how to contact me. How nice. Maybe a
-      form will be neat
-    </p>
-    <Link to="/">Go back to the homepage</Link>
+    <h1>Send me a message</h1>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
+      <p>
+        <label>
+          Your Name: <input type="text" name="name" style={{ width: "100%" }} />
+        </label>
+      </p>
+      <p>
+        <label>
+          Your Email:{" "}
+          <input type="email" name="email" style={{ width: "100%" }} />
+        </label>
+      </p>
+      <p>
+        <label>
+          Message:{" "}
+          <textarea name="message" style={{ width: "100%" }}></textarea>
+        </label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
   </Layout>
 )
 
