@@ -3,8 +3,13 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Header from "../components/header"
 
-const BlogPostTemplate = ({ data }) => (
+const BlogPostTemplate = ({ data }) => {
+  const PostHeroImage = data.wordpressPost.jetpack_featured_media_url ? 
+  <Img fluid={data.wordpressPost.jetpack_featured_media_url.localFile.childImageSharp.fluid}/> :
+  <div></div>
+  return (
   <Layout>
     {console.log(data.wordpressPost.jetpack_featured_media_url)}
     {console.log(data.wordpressPost.id)}
@@ -16,13 +21,14 @@ const BlogPostTemplate = ({ data }) => (
     <p>
       Written on {data.wordpressPost.date}
     </p>
-    <Img fluid={data.wordpressPost.jetpack_featured_media_url.localFile.childImageSharp.fluid}/>
+    {PostHeroImage}
     <div
       style={{ marginTop: 20 }}
       dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }}
     />
   </Layout>
-)
+  )
+}
 export default BlogPostTemplate
 
 export const query = graphql`
