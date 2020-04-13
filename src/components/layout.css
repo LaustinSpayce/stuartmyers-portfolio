@@ -58,6 +58,7 @@ template {
   display: none;
 }
 a {
+  color: #4A3037;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -69,6 +70,7 @@ abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   text-decoration: underline dotted;
+  font-weight: 800;
 }
 b,
 strong {
