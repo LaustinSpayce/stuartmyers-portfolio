@@ -15,6 +15,7 @@ const BlogPostSummary = (props) => {
   )
   const title = props.node.title || props.node.slug
   const link = `/post/${props.node.slug}`
+  const postDate = props.node.date
 
   return (
     <article key={props.node.slug}>
@@ -26,7 +27,7 @@ const BlogPostSummary = (props) => {
             dangerouslySetInnerHTML={{ __html: title }}
           ></Link>
         </h3>
-        <small>{Moment(props.node.date).fromNow()}</small>
+        <small>Posted {Moment(postDate).fromNow()} on {Moment(postDate).format(`MMMM Do YYYY`)}</small>
       </header>
       <section>
         {fluidImg}

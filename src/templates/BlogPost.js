@@ -17,6 +17,8 @@ const BlogPostTemplate = ({ data }) => {
   ) : (
     <div></div>
   )
+
+  const postDate = data.wordpressPost.date
   return (
     <Layout>
       <SEO
@@ -24,7 +26,7 @@ const BlogPostTemplate = ({ data }) => {
         description={data.wordpressPost.excerpt}
       />
       <h1 dangerouslySetInnerHTML={{ __html: data.wordpressPost.title }}></h1>
-      <p>Written {Moment(data.wordpressPost.date).fromNow()}</p>
+      <p>Posted {Moment(postDate).fromNow()} on {Moment(postDate).format(`MMMM Do YYYY`)}</p>
       {PostHeroImage}
       <div
         style={{ marginTop: 20 }}
