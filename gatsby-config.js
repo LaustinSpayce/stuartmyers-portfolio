@@ -7,7 +7,7 @@ module.exports = {
     title: `Stuart Myers`,
     description: `Full Stack Developer`,
     author: `Stuart Myers`,
-    siteUrl: process.env.PRODUCTION_URL
+    siteUrl: process.env.PRODUCTION_URL,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -54,7 +54,7 @@ module.exports = {
           wpcom_user: process.env.WORDPRESS_USER_EMAIL,
           wpcom_pass: process.env.WORDPRESS_PASSWORD,
         },
-        normalizer: function({ entities }) {
+        normalizer: function ({ entities }) {
           return entities
         },
       },

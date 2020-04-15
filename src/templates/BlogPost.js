@@ -26,7 +26,10 @@ const BlogPostTemplate = ({ data }) => {
         description={data.wordpressPost.excerpt}
       />
       <h1 dangerouslySetInnerHTML={{ __html: data.wordpressPost.title }}></h1>
-      <p>Posted {Moment(postDate).fromNow()} on {Moment(postDate).format(`MMMM Do YYYY`)}</p>
+      <p>
+        Posted {Moment(postDate).fromNow()} on{" "}
+        {Moment(postDate).format(`MMMM Do YYYY`)}
+      </p>
       {PostHeroImage}
       <div
         style={{ marginTop: 20 }}

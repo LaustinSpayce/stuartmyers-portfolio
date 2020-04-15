@@ -58,7 +58,7 @@ template {
   display: none;
 }
 a {
-  color: #4A3037;
+  color: #4a3037;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -642,15 +642,16 @@ pre tt:after {
 }
 
 .nav-bar {
-  font-family: 'ManropeBold';
+  font-family: "ManropeBold";
+  background-color: #a2ab84;
 }
 
 .nav-bar-list {
   list-style-type: none;
-  background-color: #A2AB84;
-  margin: 0;
+  margin: auto;
   padding: 0;
   overflow: hidden;
+  max-width: 960px;
 }
 
 .nav-bar-item {
@@ -660,7 +661,7 @@ pre tt:after {
 }
 
 .nav-bar-link {
-  color: #263A38;
+  color: #263a38;
   text-align: center;
   display: block;
   padding: 1em 1em;
@@ -669,6 +670,6 @@ pre tt:after {
 }
 
 .nav-bar-link:hover {
-  background-color: #69594E;
-  color: #58857B;
+  background-color: #69594e;
+  color: #58857b;
 }

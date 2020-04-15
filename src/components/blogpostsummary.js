@@ -27,7 +27,10 @@ const BlogPostSummary = (props) => {
             dangerouslySetInnerHTML={{ __html: title }}
           ></Link>
         </h3>
-        <small>Posted {Moment(postDate).fromNow()} on {Moment(postDate).format(`MMMM Do YYYY`)}</small>
+        <small>
+          Posted {Moment(postDate).fromNow()} on{" "}
+          {Moment(postDate).format(`MMMM Do YYYY`)}
+        </small>
       </header>
       <section>
         {fluidImg}
