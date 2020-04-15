@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 const SecondPage = () => (
   <Layout>
     <SEO title="Stuart Myers Full Stack Developer Software Programmer Singapore" />
-    <h1>About Page</h1>
+    <h1>About</h1>
     <p>Hello, I am Stuart, a full-stack developer living in sunny Singapore.</p>
     <p>
       In a past life I worked in audio post production for film, TV and

@@ -640,3 +640,35 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.nav-bar {
+  font-family: 'ManropeBold';
+}
+
+.nav-bar-list {
+  list-style-type: none;
+  background-color: #A2AB84;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-bar-item {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar-link {
+  color: #263A38;
+  text-align: center;
+  display: block;
+  padding: 1em 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-bar-link:hover {
+  background-color: #69594E;
+  color: #58857B;
+}

@@ -34,10 +34,6 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <div>
-          <Link to="/blog/">Portfolio</Link> - <Link to="/about/">About</Link> -{" "}
-          <Link to="/contact/">Contact</Link>
-        </div>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}

@@ -9,6 +9,7 @@ const BlogPosts = ({ data }) => {
 
   return (
     <Layout>
+      <h1>Portfolio</h1>
       {posts.map(({ node }, index) => {
         return <BlogPostSummary node={node} key={index} />
       })}
