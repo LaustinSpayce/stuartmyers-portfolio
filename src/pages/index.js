@@ -16,6 +16,7 @@ const cardStyle = {
   color: `#A2AB84`,
   padding: `1rem`,
   height: `300px`,
+  borderRadius: `25px`,
 }
 
 const IndexPage = () => (
@@ -37,7 +38,7 @@ const IndexPage = () => (
         >
           <div>
             <h1>Hi there!</h1>
-            <p>I am Stuart, A full stack Web Developer based in Singapore.</p>
+            <p>I am Stuart, A full stack web developer based in Singapore.</p>
           </div>
         </Col>
       </Row>
@@ -47,8 +48,12 @@ const IndexPage = () => (
       <Row style={{ textAlign: "center" }}>
         <Col lg={4}>
           <div style={cardStyle}>
-            <FontAwesomeIcon icon={faServer} size="2x" />
-            <h2>Web Development</h2>
+            <FontAwesomeIcon
+              icon={faServer}
+              size="2x"
+              style={{ margin: `1rem 0` }}
+            />
+            <h2>Development</h2>
             <p>
               Responsive <strong>web apps</strong>, from mobile to desktop.
               Using the latest technologies.
@@ -57,7 +62,11 @@ const IndexPage = () => (
         </Col>
         <Col lg={4}>
           <div style={cardStyle}>
-            <FontAwesomeIcon icon={faPaintBrush} size="2x" />
+            <FontAwesomeIcon
+              icon={faPaintBrush}
+              size="2x"
+              style={{ margin: `1rem 0` }}
+            />
             <h2>Site Design</h2>
             <p>
               I am passionate about designing apps that are a{" "}
@@ -67,7 +76,11 @@ const IndexPage = () => (
         </Col>
         <Col lg={4}>
           <div style={cardStyle}>
-            <FontAwesomeIcon icon={faHeadphones} size="2x" />
+            <FontAwesomeIcon
+              icon={faHeadphones}
+              size="2x"
+              style={{ margin: `1rem 0` }}
+            />
             <h2>Audio Work</h2>
             <p>
               From corporate, live action, to television and feature film. I can
