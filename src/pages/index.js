@@ -1,14 +1,19 @@
 import React from "react"
 import Image from "../components/image"
 import { Row, Col } from "react-grid-system"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faServer,
+  faPaintBrush,
+  faHeadphones,
+} from "@fortawesome/free-solid-svg-icons"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <section style={{margin: '5rem 0'}}>
+    <section style={{ margin: "5rem 0" }}>
       <Row>
         <Col md={5} style={{ textAlign: "center" }}>
           <Image />
@@ -19,26 +24,42 @@ const IndexPage = () => (
         </Col>
       </Row>
     </section>
-    <section style={{margin: '5rem 0'}}>
-    <h1 style={{ textAlign: "center" }}>What I Do</h1>
+    <section style={{ margin: "5rem 0" }}>
+      <h1 style={{ textAlign: "center" }}>What I Do</h1>
       <Row style={{ textAlign: "center" }}>
         <Col sm={4}>
+          <FontAwesomeIcon icon={faServer} />
           Web Development Card
         </Col>
         <Col sm={4}>
+          <FontAwesomeIcon icon={faPaintBrush} />
           Design Card
         </Col>
         <Col sm={4}>
+          <FontAwesomeIcon icon={faHeadphones} />
           Audio Work
         </Col>
       </Row>
     </section>
-    <section style={{margin: '5rem 0'}}>
-    <h1 style={{ textAlign: "center" }}>Tech Used</h1>
-    <ul>
-      <li>JavaScript</li><li>Python</li><li>Ruby</li><li>HTML</li><li>CSS</li><li>git</li><li>node.js</li><li>express.js</li><li>rails</li><li>C#</li><li>Unity</li><li>Pro Tools</li><li>Reaper</li><li>Reason</li><li>PostgreSQL</li>
-    </ul>
-      
+    <section style={{ margin: "5rem 0" }}>
+      <h1 style={{ textAlign: "center" }}>Tech Used</h1>
+      <ul>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Ruby</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>git</li>
+        <li>node.js</li>
+        <li>express.js</li>
+        <li>rails</li>
+        <li>C#</li>
+        <li>Unity</li>
+        <li>Pro Tools</li>
+        <li>Reaper</li>
+        <li>Reason</li>
+        <li>PostgreSQL</li>
+      </ul>
     </section>
   </Layout>
 )
