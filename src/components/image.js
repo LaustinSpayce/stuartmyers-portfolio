@@ -20,15 +20,27 @@ const Image = () => {
     query {
       mugshot: file(relativePath: { eq: "stuart-headshot.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 460) {
-            ...GatsbyImageSharpFluid_noBase64
+          fluid(quality: 90, maxWidth: 460) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
     }
   `)
 
-  return <Img fluid={data.mugshot.childImageSharp.fluid} />
+  const imageData = data.mugshot.childImageSharp.fluid
+
+  return ( 
+    <div style={{width: '300px', height: '300px', borderRadius: '20px', border: '1px solid black'}}>
+      <BackgroundImage
+      Tag="section"
+      fluid={imageData}
+      backgroundColor={`#040e18`}
+      style={{width: '100%', height: '100%'}}
+    >
+    </BackgroundImage>
+  </div>
+  )
 }
 
 export default Image
