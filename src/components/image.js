@@ -31,7 +31,10 @@ const Image = () => {
   const imageData = data.mugshot.childImageSharp.fluid
 
   return (
-    <Img fluid={imageData} style={{ borderRadius: "50%", maxWidth: "320px" }} />
+    <Img
+      fluid={imageData}
+      style={{ borderRadius: "50%", maxWidth: "320px", margin: "0 auto 2rem" }}
+    />
   )
 }
 
