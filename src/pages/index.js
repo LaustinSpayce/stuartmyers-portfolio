@@ -11,9 +11,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 
 const cardStyle = {
-  background: "#263A38",
+  background: `#653C28`,
   margin: `0.25rem`,
-  color: `#A2AB84`,
+  color: `#D8D4D3`,
   padding: `1rem`,
   height: `300px`,
   borderRadius: `25px`,
@@ -92,22 +92,22 @@ const IndexPage = () => (
     </section>
     <section style={{ margin: "5rem 0" }}>
       <h1 style={{ textAlign: "center" }}>Tech Used</h1>
-      <ul>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>Ruby</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>git</li>
-        <li>node.js</li>
-        <li>express.js</li>
-        <li>rails</li>
-        <li>C#</li>
-        <li>Unity</li>
-        <li>Pro Tools</li>
-        <li>Reaper</li>
-        <li>Reason</li>
-        <li>PostgreSQL</li>
+      <ul className="skills-list">
+        <li className="skills-list-item">JavaScript</li>
+        <li className="skills-list-item">Python</li>
+        <li className="skills-list-item">Ruby</li>
+        <li className="skills-list-item">HTML</li>
+        <li className="skills-list-item">CSS</li>
+        <li className="skills-list-item">git</li>
+        <li className="skills-list-item">node.js</li>
+        <li className="skills-list-item">express.js</li>
+        <li className="skills-list-item">rails</li>
+        <li className="skills-list-item">C#</li>
+        <li className="skills-list-item">Unity</li>
+        <li className="skills-list-item">Pro Tools</li>
+        <li className="skills-list-item">Reaper</li>
+        <li className="skills-list-item">Reason</li>
+        <li className="skills-list-item">PostgreSQL</li>
       </ul>
     </section>
   </Layout>

@@ -673,3 +673,25 @@ pre tt:after {
   background-color: #41494b;
   color: #d8d4d3;
 }
+
+.skills-list {
+  list-style-type: none;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  font-family: ManropeBold;
+}
+
+.skills-list-item {
+  display: inline-block;
+  margin: 0.25rem 0.25rem;
+  padding: 0.125rem 0.5rem 0.2rem 0.5rem;
+  border-radius: 1em;
+  border: solid 3px #653c28;
+}
+
+.skills-list-item:hover {
+  background-color: #653c28;
+  color: #d8d4d3;
+}
