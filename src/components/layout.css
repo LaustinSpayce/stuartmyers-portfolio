@@ -58,7 +58,7 @@ template {
   display: none;
 }
 a {
-  color: #4a3037;
+  color: #653c28;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -219,7 +219,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: #41494b;
   font-family: Lora, georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -643,7 +643,7 @@ pre tt:after {
 
 .nav-bar {
   font-family: "ManropeBold";
-  background-color: #a2ab84;
+  background-color: #b4aba4;
 }
 
 .nav-bar-list {
@@ -661,7 +661,7 @@ pre tt:after {
 }
 
 .nav-bar-link {
-  color: #263a38;
+  color: #653c28;
   text-align: center;
   display: block;
   padding: 1em 1em;
@@ -670,6 +670,6 @@ pre tt:after {
 }
 
 .nav-bar-link:hover {
-  background-color: #69594e;
-  color: #58857b;
+  background-color: #41494b;
+  color: #d8d4d3;
 }
