@@ -38,17 +38,21 @@ const Layout = ({ children }) => {
           <Container>{children}</Container>
         </main>
       </div>
-      <footer style={{backgroundColor: `#653c28`, color: `#d8d4d3`, width: `100%`}}>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `1.45rem 1.0875rem 1.45rem`,
-        }}
+      <footer
+        style={{ backgroundColor: `#653c28`, color: `#d8d4d3`, width: `100%` }}
       >
+        <div
+          style={{
+            margin: `0 auto`,
+            maxWidth: 960,
+            padding: `1.45rem 1.0875rem 1.45rem`,
+          }}
+        >
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org" style={{color: `#d8d4d3`}}>Gatsby</a>
+          <a href="https://www.gatsbyjs.org" style={{ color: `#d8d4d3` }}>
+            Gatsby
+          </a>
         </div>
       </footer>
     </>
