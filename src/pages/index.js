@@ -1,6 +1,5 @@
 import React from "react"
 import Image from "../components/image"
-import { Row, Col } from "react-grid-system"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -23,12 +22,11 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <section style={{ margin: "5rem 0" }}>
-      <Row>
-        <Col md={5} style={{ textAlign: "center", margin: "0 auto" }}>
+      <div className="grid grid-cols-1 md:grid-cols-5">
+        <div className="col-span-2 h-auto" style={{ textAlign: "center" }}>
           <Image />
-        </Col>
-        <Col
-          md={7}
+        </div>
+        <div className="col-span-3"
           style={{
             textAlign: "center",
             display: "flex",
@@ -40,13 +38,13 @@ const IndexPage = () => (
             <h1>Hi there!</h1>
             <p>I am Stuart, A full stack web developer based in Singapore.</p>
           </div>
-        </Col>
-      </Row>
+        </div>
+      </div>
     </section>
     <section style={{ margin: "5rem 0" }}>
       <h1 style={{ textAlign: "center" }}>What I Do</h1>
-      <Row style={{ textAlign: "center" }}>
-        <Col lg={4}>
+      <div className="grid grid-cols-1 md:grid-cols-3" style={{ textAlign: "center" }}>
+        <div className="col-span-1">
           <div style={cardStyle}>
             <FontAwesomeIcon
               icon={faServer}
@@ -59,8 +57,8 @@ const IndexPage = () => (
               Using the latest technologies.
             </p>
           </div>
-        </Col>
-        <Col lg={4}>
+        </div>
+        <div className="col-span-1">
           <div style={cardStyle}>
             <FontAwesomeIcon
               icon={faPaintBrush}
@@ -73,8 +71,8 @@ const IndexPage = () => (
               <strong>joy to use.</strong>
             </p>
           </div>
-        </Col>
-        <Col lg={4}>
+        </div>
+        <div className="col-span-1">
           <div style={cardStyle}>
             <FontAwesomeIcon
               icon={faHeadphones}
@@ -87,8 +85,8 @@ const IndexPage = () => (
               make your project <strong>sound its very best.</strong>
             </p>
           </div>
-        </Col>
-      </Row>
+        </div>
+      </div>
     </section>
     <section style={{ margin: "5rem 0" }}>
       <h1 style={{ textAlign: "center" }}>Tech Used</h1>

@@ -8,7 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { Container } from "react-grid-system"
 
 import Header from "./header"
 import "./layout.css"
@@ -35,7 +34,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>
-          <Container>{children}</Container>
+          <div className="container mx-auto">{children}</div>
         </main>
       </div>
       <footer
