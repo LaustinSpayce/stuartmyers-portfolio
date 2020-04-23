@@ -111,6 +111,6 @@ const IndexPage = () => (
       </ul>
     </section>
   </Layout>
-)
+) 
 
 export default IndexPage
