@@ -36,7 +36,7 @@ const IndexPage = () => (
         >
           <div>
             <h1>Hi there!</h1>
-            <p>I am Stuart, A full stack web developer based in Singapore.</p>
+            <p>I am Stuart, a full stack web developer based in Singapore.</p>
           </div>
         </div>
       </div>
