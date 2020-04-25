@@ -19,14 +19,14 @@ If you make consecutive mistakes without a correct character being typed in, you
 ### Features
 
 - Simple player "classes" (difficulty):
-    - Point 'n' Click Adventurer (easy 1 short word)
-    - Keyboard Warrior (medium 2 medium words)
-    - Netcodemancer (hard 3 any words)
+  - Point 'n' Click Adventurer (easy 1 short word)
+  - Keyboard Warrior (medium 2 medium words)
+  - Netcodemancer (hard 3 any words)
 - Each successful phrase completed is an "attack".
 - Levels to go through:
-    - Grassy Field
-    - Dusty Desert
-    - Creepy Caves
+  - Grassy Field
+  - Dusty Desert
+  - Creepy Caves
 - Some light RPG-style levelling up and damage progression.
 - Special boss attacks/features for the three bosses.
 - Simple animations

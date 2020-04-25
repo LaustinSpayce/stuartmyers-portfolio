@@ -26,7 +26,8 @@ const IndexPage = () => (
         <div className="col-span-2 h-auto" style={{ textAlign: "center" }}>
           <Image />
         </div>
-        <div className="col-span-3"
+        <div
+          className="col-span-3"
           style={{
             textAlign: "center",
             display: "flex",
@@ -43,7 +44,10 @@ const IndexPage = () => (
     </section>
     <section style={{ margin: "5rem 0" }}>
       <h1 style={{ textAlign: "center" }}>What I Do</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3" style={{ textAlign: "center" }}>
+      <div
+        className="grid grid-cols-1 md:grid-cols-3"
+        style={{ textAlign: "center" }}
+      >
         <div className="col-span-1">
           <div style={cardStyle}>
             <FontAwesomeIcon
@@ -109,6 +113,6 @@ const IndexPage = () => (
       </ul>
     </section>
   </Layout>
-) 
+)
 
 export default IndexPage
