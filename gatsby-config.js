@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Stuart Myers`,
-    description: `Full Stack Developer`,
+    description: `Stuart Myers - full stack developer portfolio site`,
     author: `Stuart Myers`,
     siteUrl: process.env.PRODUCTION_URL,
   },
@@ -15,7 +15,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/content/`,
       },
     },
     `gatsby-transformer-sharp`,
