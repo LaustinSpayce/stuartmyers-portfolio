@@ -7,7 +7,7 @@ path: "boaty-mcboatface"
 
 Over the last few months I've been learning how to code and also learning how to incorporate sound effects with audio middleware. This all culminated in a simple game that's got the rather goofy title "Boaty McBoatface Island Adventure".
 
-https://gfycat.com/FaroffSlimCollardlizard
+<div style='position:relative; padding-bottom:calc(56.25% + 44px)'><iframe src='https://gfycat.com/ifr/FaroffSlimCollardlizard' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div><p> <a href="https://gfycat.com/faroffslimcollardlizard">via Gfycat</a></p>
 
 [If you haven't already, then download the game here!](https://laustinspayce.itch.io/boaty-mcboatface-island-adventure)
 
