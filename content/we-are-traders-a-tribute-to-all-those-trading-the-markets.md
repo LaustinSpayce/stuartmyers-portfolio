@@ -3,6 +3,6 @@ title: "We Are Traders - A Tribute to All Those Trading The Markets"
 date: "2011-06-01"
 ---
 
-https://www.youtube.com/watch?v=MwKYjZ\_8EcE
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MwKYjZ_8EcE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Music composition, Voice-over recording, sound design & mix

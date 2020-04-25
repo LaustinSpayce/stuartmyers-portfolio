@@ -10,7 +10,11 @@ I had the pleasure over the last few months to work with [Dan Kondratyuk](https
 
 **Nodulus** is a puzzle game with a clever twist. Based on the mathematical theory behind plank puzzles, consists of a grid of cubes and rods which can be rotated with a swipe. Turn the activated cubes to reach the end cube to win the level.
 
-◉ Original concept - designed and developed by a math lover ◉ 20 increasingly challenging levels that will test your problem solving ◉ Quick and easy level select ◉ Abstract atmosphere with relaxing music ◉ Optimized for touch devices
+- Original concept - designed and developed by a math lover 
+- 20 increasingly challenging levels that will test your problem solving 
+- Quick and easy level select 
+- Abstract atmosphere with relaxing music 
+- Optimized for touch devices
 
 [![Download_on_the_App_Store_Badge_US-UK_135x40](images/download_on_the_app_store_badge_us-uk_135x40.png)](https://hyperparticle.com/nodulus)
 
