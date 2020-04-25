@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import BlogPostSummary from "../components/blogpostsummary"
 
 const BlogPosts = ({ data }) => {
-  const posts = data.allWordpressPost.edges
+  const posts = data.allMarkdownRemark.edges
 
   return (
     <Layout>
@@ -20,22 +20,20 @@ export default BlogPosts
 
 export const query = graphql`
   query BlogSummary {
-    allWordpressPost(sort: { fields: [date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 1000
+    ) {
       edges {
         node {
-          id
-          title
-          date
-          excerpt
-          slug
-          jetpack_featured_media_url {
-            localFile {
-              childImageSharp {
-                fluid(maxWidth: 920, maxHeight: 210) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
+          fields {
+            slug
+          }
+          frontmatter {
+            path
+            title
+            date
+            coverImage
           }
         }
       }

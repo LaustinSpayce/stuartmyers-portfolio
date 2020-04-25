@@ -2,7 +2,7 @@
 title: "Nodulus"
 date: "2017-11-20"
 coverImage: "nodulus-thumbnail-2208x1242.png"
-path: "/nodulus"
+path: "nodulus"
 ---
 
 I had the pleasure over the last few months to work with [Dan Kondratyuk](https://hyperparticle.com/about/) and fellow composer and sound designer [Travis W. Hendrix](http://traviswhendrix.com/) on Dan's open-source plank puzzle game, [Nodulus.](https://github.com/Hyperparticle/nodulus)

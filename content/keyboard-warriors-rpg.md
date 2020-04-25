@@ -2,7 +2,7 @@
 title: "Keyboard Warriors RPG"
 date: "2020-01-09"
 coverImage: "keyboard-warriors.png"
-path: "/keyboard-warriors"
+path: "keyboard-warriors"
 ---
 
 As part of my studies at [General Assembly](http://www.generalassemb.ly) in Singapore, our first portfolio project was to create a game that can be played entirely in the browser, using javascript.

@@ -13,19 +13,18 @@ const BlogPostSummary = (props) => {
   ) : (
     <div></div>
   )
-  const title = props.node.title || props.node.slug
-  const link = `/post/${props.node.slug}`
-  const postDate = props.node.date
+  const title = props.node.frontmatter.title || props.node.slug
+  const link = props.node.fields.slug
+  const postDate = props.node.frontmatter.date
 
   return (
-    <article key={props.node.slug}>
+    <article key={props.node.fields.slug}>
       <header>
         <h3>
           <Link
             style={{ boxShadow: `none` }}
             to={link}
-            dangerouslySetInnerHTML={{ __html: title }}
-          ></Link>
+          >{title}</Link>
         </h3>
         <small>
           Posted {Moment(postDate).fromNow()} on{" "}
@@ -36,7 +35,7 @@ const BlogPostSummary = (props) => {
         {fluidImg}
         <p
           dangerouslySetInnerHTML={{
-            __html: props.node.description || props.node.excerpt,
+            __html: props.node.html || props.node.excerpt,
           }}
         />
       </section>

@@ -1,7 +1,7 @@
 ---
 title: "Mata Mata (Mediacorp Channel 5)"
 date: "2017-03-01"
-path: "/mata-mata"
+path: "mata-mata"
 ---
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JcSROBk2GNw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

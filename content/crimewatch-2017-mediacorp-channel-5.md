@@ -2,7 +2,7 @@
 title: "Crimewatch 2017 (Mediacorp Channel 5)"
 date: "2017-04-05"
 coverImage: "crimewatch-2017-tif-ep1-box-cover-mcbc0170314007030261-20170315105501.jpg"
-path: "/crimewatch-2017"
+path: "crimewatch-2017"
 ---
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Y9ltPDB_zdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
