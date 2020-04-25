@@ -32,31 +32,37 @@ module.exports = {
         icon: `src/images/laustin.png`, // This path is relative to the root of the site.
       },
     },
+    // {
+    //   resolve: "gatsby-source-wordpress",
+    //   options: {
+    //     baseUrl: "stuartmyerscom.wordpress.com",
+    //     hostingWPCOM: true,
+    //     useACF: true,
+    //     includedRoutes: [
+    //       "**/categories",
+    //       "**/posts",
+    //       "**/pages",
+    //       "**/media",
+    //       "**/tags",
+    //       // "**/taxonomies",
+    //       // "**/users",
+    //     ],
+    //     excludedRoutes: [],
+    //     auth: {
+    //       wpcom_app_clientSecret: process.env.WORDPRESS_CLIENT_SECRET,
+    //       wpcom_app_clientId: process.env.WORDPRESS_CLIENT_ID,
+    //       wpcom_user: process.env.WORDPRESS_USER_EMAIL,
+    //       wpcom_pass: process.env.WORDPRESS_PASSWORD,
+    //     },
+    //     normalizer: function ({ entities }) {
+    //       return entities
+    //     },
+    //   },
+    // },
     {
-      resolve: "gatsby-source-wordpress",
+      resolve: "gatsby-transformer-remark",
       options: {
-        baseUrl: "stuartmyerscom.wordpress.com",
-        hostingWPCOM: true,
-        useACF: true,
-        includedRoutes: [
-          "**/categories",
-          "**/posts",
-          "**/pages",
-          "**/media",
-          "**/tags",
-          // "**/taxonomies",
-          // "**/users",
-        ],
-        excludedRoutes: [],
-        auth: {
-          wpcom_app_clientSecret: process.env.WORDPRESS_CLIENT_SECRET,
-          wpcom_app_clientId: process.env.WORDPRESS_CLIENT_ID,
-          wpcom_user: process.env.WORDPRESS_USER_EMAIL,
-          wpcom_pass: process.env.WORDPRESS_PASSWORD,
-        },
-        normalizer: function ({ entities }) {
-          return entities
-        },
+        plugins: [], // just in case those previously mentioned remark plugins sound cool :)
       },
     },
     `gatsby-plugin-sass`,

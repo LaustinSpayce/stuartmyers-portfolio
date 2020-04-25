@@ -7,58 +7,45 @@ import Header from "../components/header"
 import Moment from "moment"
 
 const BlogPostTemplate = ({ data }) => {
-  const PostHeroImage = data.wordpressPost.jetpack_featured_media_url ? (
-    <Img
-      fluid={
-        data.wordpressPost.jetpack_featured_media_url.localFile.childImageSharp
-          .fluid
-      }
-    />
-  ) : (
-    <div></div>
-  )
+  const { markdownRemark: post } = data
+  // const PostHeroImage = data.wordpressPost.jetpack_featured_media_url ? (
+  //   <Img
+  //     fluid={
+  //       data.wordpressPost.jetpack_featured_media_url.localFile.childImageSharp
+  //         .fluid
+  //     }
+  //   />
+  // ) : (
+  //   <div></div>
+  // )
 
-  const postDate = data.wordpressPost.date
+  const postDate = post.frontmatter.date
   return (
     <Layout>
-      <SEO
-        title={data.wordpressPost.title}
-        description={data.wordpressPost.excerpt}
-      />
-      <h1 dangerouslySetInnerHTML={{ __html: data.wordpressPost.title }}></h1>
+      <SEO title={post.frontmatter.title} />
+      <h1>{post.frontmatter.title}</h1>
       <p>
         Posted {Moment(postDate).fromNow()} on{" "}
         {Moment(postDate).format(`MMMM Do YYYY`)}
       </p>
-      {PostHeroImage}
+      {/* {PostHeroImage} */}
       <div
         style={{ marginTop: 20 }}
-        dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }}
+        dangerouslySetInnerHTML={{ __html: post.html }}
       />
     </Layout>
   )
 }
 export default BlogPostTemplate
 
-export const query = graphql`
-  query($id: Int!) {
-    wordpressPost(wordpress_id: { eq: $id }) {
-      id
-      content
-      date
-      format
-      path
-      title
-      type
-      excerpt
-      jetpack_featured_media_url {
-        localFile {
-          childImageSharp {
-            fluid(maxWidth: 920, maxHeight: 420) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+export const pageQuery = graphql`
+  query BlogPostByPath($path: String!) {
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
+      html
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        path
+        title
       }
     }
   }

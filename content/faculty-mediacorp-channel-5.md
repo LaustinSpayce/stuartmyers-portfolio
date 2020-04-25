@@ -1,6 +1,7 @@
 ---
 title: "Faculty (Mediacorp Channel 5)"
 date: "2017-01-31"
+path: "/faculty"
 ---
 
 ## [Faculty on Mediacorp mewatch](https://tv.mewatch.sg/en/tv/shows/fa/faculty/info)

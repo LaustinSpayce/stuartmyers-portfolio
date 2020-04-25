@@ -16,11 +16,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const result = await graphql(`
     {
-      allWordpressPost {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
         edges {
           node {
-            slug
-            wordpress_id
+            frontmatter {
+              path
+            }
           }
         }
       }

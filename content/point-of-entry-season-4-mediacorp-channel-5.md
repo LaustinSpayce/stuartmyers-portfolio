@@ -1,6 +1,7 @@
 ---
 title: "Point of Entry Season 4 (Mediacorp Channel 5)"
 date: "2014-03-20"
+path: "/point-of-entry"
 ---
 
 <iframe frameborder="0" width="480" height="270" allowfullscreen src="https://www.mewatch.sg/en/embed/278368" ></iframe>

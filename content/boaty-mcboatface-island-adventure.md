@@ -2,6 +2,7 @@
 title: "Boaty McBoatface Island Adventure"
 date: "2017-09-18"
 coverImage: "screenshot_2.png"
+path: "/boaty-mcboatface"
 ---
 
 Over the last few months I've been learning how to code and also learning how to incorporate sound effects with audio middleware. This all culminated in a simple game that's got the rather goofy title "Boaty McBoatface Island Adventure".

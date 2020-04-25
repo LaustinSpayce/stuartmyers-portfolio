@@ -1,6 +1,7 @@
 ---
 title: "Range Rover Evoque - The Premiere"
 date: "2012-05-03"
+path: "/range-rover-the-premiere"
 ---
 
 ## [The Premiere](https://vimeo.com/40929664)
