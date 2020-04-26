@@ -9,9 +9,7 @@ const BlogPostTemplate = ({ data }) => {
   const { markdownRemark: post } = data
   const PostHeroImage = post.frontmatter.coverImage ? (
     <Img
-      fluid={
-        post.frontmatter.coverImage.childImageSharp.fluid
-      }
+      fluid={post.frontmatter.coverImage.childImageSharp.fluid}
       alt={post.frontmatter.title}
     />
   ) : (
@@ -47,7 +45,7 @@ export const pageQuery = graphql`
         title
         coverImage {
           childImageSharp {
-            fluid (maxWidth: 920) {
+            fluid(maxWidth: 920) {
               ...GatsbyImageSharpFluid
             }
           }

@@ -5,11 +5,7 @@ import Moment from "moment"
 
 const BlogPostSummary = (props) => {
   let fluidImg = props.node.frontmatter.coverImage ? (
-    <Img
-      fluid={
-        props.node.frontmatter.coverImage.childImageSharp.fluid
-      }
-    />
+    <Img fluid={props.node.frontmatter.coverImage.childImageSharp.fluid} />
   ) : (
     <div></div>
   )
@@ -21,10 +17,9 @@ const BlogPostSummary = (props) => {
     <article key={props.node.fields.slug}>
       <header>
         <h3>
-          <Link
-            style={{ boxShadow: `none` }}
-            to={link}
-          >{title}</Link>
+          <Link style={{ boxShadow: `none` }} to={link}>
+            {title}
+          </Link>
         </h3>
         <small>
           Posted {Moment(postDate).fromNow()} on{" "}

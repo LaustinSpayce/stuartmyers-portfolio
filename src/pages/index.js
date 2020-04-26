@@ -6,14 +6,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faServer,
   faPaintBrush,
-  faHeadphones
+  faHeadphones,
 } from "@fortawesome/free-solid-svg-icons"
 
-import { faFacebook,
+import {
+  faFacebook,
   faInstagram,
   faTwitter,
   faLinkedin,
-  faGithub } from "@fortawesome/free-brands-svg-icons"
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons"
 
 const cardStyle = {
   background: `#41494b`,
@@ -26,7 +28,7 @@ const cardStyle = {
 
 const socialMediaIconStyle = {
   margin: `0 0.25em`,
-  color: `#2d3c5e`
+  color: `#2d3c5e`,
 }
 
 const IndexPage = () => (
@@ -51,21 +53,46 @@ const IndexPage = () => (
             <p>I am Stuart, a full stack web developer based in Singapore.</p>
             <p>
               <a href="https://www.facebook.com/stuart.myers">
-                <FontAwesomeIcon icon={faFacebook} size="2x" style={socialMediaIconStyle} width="0"/>
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  size="2x"
+                  style={socialMediaIconStyle}
+                  width="0"
+                />
               </a>
               <a href="https://www.instagram.com/laustinspayce/">
-                <FontAwesomeIcon icon={faInstagram} size="2x" style={socialMediaIconStyle} width="0"/>
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  size="2x"
+                  style={socialMediaIconStyle}
+                  width="0"
+                />
               </a>
               <a href="https://twitter.com/thisisska/">
-                <FontAwesomeIcon icon={faTwitter} size="2x" style={socialMediaIconStyle} width="0"/>
+                <FontAwesomeIcon
+                  icon={faTwitter}
+                  size="2x"
+                  style={socialMediaIconStyle}
+                  width="0"
+                />
               </a>
               <a href="https://www.linkedin.com/in/smyerssg/">
-                <FontAwesomeIcon icon={faLinkedin} size="2x" style={socialMediaIconStyle} width="0"/>
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  size="2x"
+                  style={socialMediaIconStyle}
+                  width="0"
+                />
               </a>
               <a href="https://www.github.com/laustinspayce">
-                <FontAwesomeIcon icon={faGithub} size="2x" style={socialMediaIconStyle} width="0"/>
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  size="2x"
+                  style={socialMediaIconStyle}
+                  width="0"
+                />
               </a>
-              </p>
+            </p>
           </div>
         </div>
       </div>
@@ -117,7 +144,9 @@ const IndexPage = () => (
             <h2>Audio Work</h2>
             <p>
               From corporate, live action, to television and feature film. I can
-              make your project<br/><strong>sound its very best.</strong>
+              make your project
+              <br />
+              <strong>sound its very best.</strong>
             </p>
           </div>
         </div>

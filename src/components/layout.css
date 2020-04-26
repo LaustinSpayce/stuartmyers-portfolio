@@ -14,8 +14,7 @@
   font-weight: 400;
   src: url("../../static/fonts/lora/lora-v15-latin-regular.woff2")
     format("woff2");
-} 
-
+}
 
 @import "tailwindcss/base";
 
