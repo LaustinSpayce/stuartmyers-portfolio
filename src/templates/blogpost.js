@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Header from "../components/header"
 import Moment from "moment"
 
 const BlogPostTemplate = ({ data }) => {
