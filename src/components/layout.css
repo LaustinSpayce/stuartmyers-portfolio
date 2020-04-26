@@ -13,8 +13,9 @@
   font-style: normal;
   font-weight: 400;
   src: url("../../static/fonts/lora/lora-v15-latin-regular.woff2")
-    format("woff2"); /* Super Modern Browsers */
-}
+    format("woff2");
+} 
+
 
 @import "tailwindcss/base";
 
@@ -65,7 +66,7 @@ template {
   display: none;
 }
 a {
-  color: #653c28;
+  color: #2d3c5e;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -650,7 +651,7 @@ pre tt:after {
 
 .nav-bar {
   font-family: "ManropeBold";
-  background-color: #b4aba4;
+  background-color: #c0c4ce;
 }
 
 .nav-bar-list {
@@ -668,7 +669,7 @@ pre tt:after {
 }
 
 .nav-bar-link {
-  color: #653c28;
+  color: #2d3c5e;
   text-align: center;
   display: block;
   padding: 1em 1em;
@@ -677,8 +678,8 @@ pre tt:after {
 }
 
 .nav-bar-link:hover {
-  background-color: #41494b;
-  color: #d8d4d3;
+  background-color: #1b2438;
+  color: #c0c4ce;
 }
 
 .skills-list {
@@ -695,10 +696,10 @@ pre tt:after {
   margin: 0.25rem 0.25rem;
   padding: 0.125rem 0.5rem 0.2rem 0.5rem;
   border-radius: 1em;
-  border: solid 3px #653c28;
+  border: solid 3px #2d3c5e;
 }
 
 .skills-list-item:hover {
-  background-color: #653c28;
+  background-color: #2d3c5e;
   color: #d8d4d3;
 }
