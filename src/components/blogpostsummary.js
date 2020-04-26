@@ -4,10 +4,10 @@ import Img from "gatsby-image"
 import Moment from "moment"
 
 const BlogPostSummary = (props) => {
-  let fluidImg = props.node.jetpack_featured_media_url ? (
+  let fluidImg = props.node.frontmatter.coverImage ? (
     <Img
       fluid={
-        props.node.jetpack_featured_media_url.localFile.childImageSharp.fluid
+        props.node.frontmatter.coverImage.childImageSharp.fluid
       }
     />
   ) : (
@@ -35,7 +35,7 @@ const BlogPostSummary = (props) => {
         {fluidImg}
         <p
           dangerouslySetInnerHTML={{
-            __html: props.node.html || props.node.excerpt,
+            __html: props.node.frontmatter.description || props.node.excerpt,
           }}
         />
       </section>

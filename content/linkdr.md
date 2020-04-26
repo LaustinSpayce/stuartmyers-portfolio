@@ -1,8 +1,9 @@
 ---
 title: "Linkdr"
 date: "2020-02-25"
-coverImage: "screenshot-2020-02-25-at-6.01.38-pm.png"
+coverImage: "./images/screenshot-2020-02-25-at-6.01.38-pm.png"
 path: "linkdr"
+description: "Linkdr is where people hire sofrware developers. Like in real life, but better."
 ---
 
 [Linkdr is where people hire software developers.](http://linkdr.herokuapp.com/) Like in real life, but better.

@@ -1,7 +1,7 @@
 ---
 title: "Boaty McBoatface Island Adventure"
 date: "2017-09-18"
-coverImage: "screenshot_2.png"
+coverImage: "./images/screenshot_2.png"
 path: "boaty-mcboatface"
 ---
 

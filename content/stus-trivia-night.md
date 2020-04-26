@@ -1,8 +1,9 @@
 ---
 title: "Stu's Trivia Night"
 date: "2020-02-06"
-coverImage: "quiz-night.png"
+coverImage: "./images/quiz-night.png"
 path: "stus-trivia-night"
+description: "Stu's Trivis Night is a multiplayer quiz-taking app suitable for classrooms, parties, and more!"
 ---
 
 Stu's Trivia Night is a quiz-taking app meant to be taken by multiple people at the same time, ideally in a classroom setting. [Try it out!](https://project-2-quiz.herokuapp.com/)

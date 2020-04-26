@@ -1,7 +1,7 @@
 ---
 title: "Nodulus"
 date: "2017-11-20"
-coverImage: "nodulus-thumbnail-2208x1242.png"
+coverImage: "./images/nodulus-thumbnail-2208x1242.png"
 path: "nodulus"
 ---
 

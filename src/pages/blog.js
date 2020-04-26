@@ -26,6 +26,7 @@ export const query = graphql`
     ) {
       edges {
         node {
+          excerpt
           fields {
             slug
           }
@@ -33,7 +34,14 @@ export const query = graphql`
             path
             title
             date
-            coverImage
+            description
+            coverImage {
+              childImageSharp {
+                fluid (maxWidth: 920, maxHeight: 320) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

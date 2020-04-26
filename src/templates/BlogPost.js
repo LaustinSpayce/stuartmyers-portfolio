@@ -8,16 +8,15 @@ import Moment from "moment"
 
 const BlogPostTemplate = ({ data }) => {
   const { markdownRemark: post } = data
-  // const PostHeroImage = data.wordpressPost.jetpack_featured_media_url ? (
-  //   <Img
-  //     fluid={
-  //       data.wordpressPost.jetpack_featured_media_url.localFile.childImageSharp
-  //         .fluid
-  //     }
-  //   />
-  // ) : (
-  //   <div></div>
-  // )
+  const PostHeroImage = post.frontmatter.coverImage ? (
+    <Img
+      fluid={
+        post.frontmatter.coverImage.childImageSharp.fluid
+      }
+    />
+  ) : (
+    <div></div>
+  )
 
   const postDate = post.frontmatter.date
 
@@ -29,7 +28,7 @@ const BlogPostTemplate = ({ data }) => {
         Posted {Moment(postDate).fromNow()} on{" "}
         {Moment(postDate).format(`MMMM Do YYYY`)}
       </p>
-      {/* {PostHeroImage} */}
+      {PostHeroImage}
       <div
         style={{ marginTop: 20 }}
         dangerouslySetInnerHTML={{ __html: post.html }}
