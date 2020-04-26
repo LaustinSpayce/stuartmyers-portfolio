@@ -4,28 +4,22 @@ import Img from "gatsby-image"
 import Moment from "moment"
 
 const BlogPostSummary = (props) => {
-  let fluidImg = props.node.jetpack_featured_media_url ? (
-    <Img
-      fluid={
-        props.node.jetpack_featured_media_url.localFile.childImageSharp.fluid
-      }
-    />
+  let fluidImg = props.node.frontmatter.coverImage ? (
+    <Img fluid={props.node.frontmatter.coverImage.childImageSharp.fluid} />
   ) : (
     <div></div>
   )
-  const title = props.node.title || props.node.slug
-  const link = `/post/${props.node.slug}`
-  const postDate = props.node.date
+  const title = props.node.frontmatter.title || props.node.slug
+  const link = props.node.fields.slug
+  const postDate = props.node.frontmatter.date
 
   return (
-    <article key={props.node.slug}>
+    <article key={props.node.fields.slug}>
       <header>
         <h3>
-          <Link
-            style={{ boxShadow: `none` }}
-            to={link}
-            dangerouslySetInnerHTML={{ __html: title }}
-          ></Link>
+          <Link style={{ boxShadow: `none` }} to={link}>
+            {title}
+          </Link>
         </h3>
         <small>
           Posted {Moment(postDate).fromNow()} on{" "}
@@ -36,7 +30,7 @@ const BlogPostSummary = (props) => {
         {fluidImg}
         <p
           dangerouslySetInnerHTML={{
-            __html: props.node.description || props.node.excerpt,
+            __html: props.node.frontmatter.description || props.node.excerpt,
           }}
         />
       </section>

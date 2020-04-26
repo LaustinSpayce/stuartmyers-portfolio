@@ -1,6 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1a9f592f-9787-4a25-a24b-dc01f58a0565/deploy-status)](https://app.netlify.com/sites/clever-bohr-d6b52c/deploys)
 
 # [stuartmyers.com](https://stuartmyers.com/)
+
 ## Portfolio website for Stuart Myers
 
 This is the source code for my portfolio website.
