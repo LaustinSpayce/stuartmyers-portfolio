@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import BlogPostSummary from "../components/blogpostsummary"
 
-const BlogPosts = ({ data }) => {
+const Portfolio = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
 
   return (
@@ -16,7 +16,7 @@ const BlogPosts = ({ data }) => {
     </Layout>
   )
 }
-export default BlogPosts
+export default Portfolio
 
 export const query = graphql`
   query BlogSummary {

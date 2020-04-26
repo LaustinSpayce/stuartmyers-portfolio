@@ -31,7 +31,7 @@ const Header = ({ siteTitle }) => (
     <nav className="nav-bar">
       <ul className="nav-bar-list">
         <li className="nav-bar-item">
-          <Link className="nav-bar-link" to="/blog/">
+          <Link className="nav-bar-link" to="/portfolio/">
             Portfolio
           </Link>
         </li>

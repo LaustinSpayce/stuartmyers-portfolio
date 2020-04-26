@@ -13,6 +13,7 @@ const BlogPostTemplate = ({ data }) => {
       fluid={
         post.frontmatter.coverImage.childImageSharp.fluid
       }
+      alt={post.frontmatter.title}
     />
   ) : (
     <div></div>
@@ -45,6 +46,13 @@ export const pageQuery = graphql`
       frontmatter {
         date
         title
+        coverImage {
+          childImageSharp {
+            fluid (maxWidth: 920) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
