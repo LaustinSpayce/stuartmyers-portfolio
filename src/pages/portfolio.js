@@ -9,6 +9,7 @@ const Portfolio = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="Portfolio" />
       <h1>Portfolio</h1>
       {posts.map(({ node }, index) => {
         return <BlogPostSummary node={node} key={index} />
