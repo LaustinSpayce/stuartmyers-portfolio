@@ -6,21 +6,39 @@
 
 // You can delete this file if you're not using it
 const path = require(`path`)
+const { createFilePath } = require(`gatsby-source-filesystem`)
+
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions
+  if (node.internal.type === `MarkdownRemark`) {
+    const slug = createFilePath({ node, getNode, basePath: `pages` })
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug,
+    })
+  }
+}
+
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
-  const BlogPostTemplate = path.resolve("./src/templates/BlogPost.js")
+  const BlogPostTemplate = path.resolve("./src/templates/blogpost.js")
 
   const result = await graphql(`
     {
-      allWordpressPost {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
         edges {
           node {
-            slug
-            wordpress_id
+            fields {
+              slug
+            }
           }
         }
       }
@@ -32,14 +50,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return
   }
 
-  const BlogPosts = result.data.allWordpressPost.edges
+  const BlogPosts = result.data.allMarkdownRemark.edges
+
   BlogPosts.forEach((post) => {
     createPage({
-      path: `/post/${post.node.slug}`,
+      path: post.node.fields.slug,
       component: BlogPostTemplate,
-      context: {
-        id: post.node.wordpress_id,
-      },
+      context: { slug: post.node.fields.slug },
     })
   })
 }

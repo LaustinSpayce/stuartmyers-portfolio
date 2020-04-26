@@ -5,7 +5,7 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#653C28`,
+      background: `#2d3c5e`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -31,7 +31,7 @@ const Header = ({ siteTitle }) => (
     <nav className="nav-bar">
       <ul className="nav-bar-list">
         <li className="nav-bar-item">
-          <Link className="nav-bar-link" to="/blog/">
+          <Link className="nav-bar-link" to="/portfolio/">
             Portfolio
           </Link>
         </li>

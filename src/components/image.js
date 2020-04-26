@@ -2,8 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import BackgroundImage from "gatsby-background-image"
-
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
  * images with lazy loading and reduced file sizes. The image is loaded using a
@@ -18,7 +16,7 @@ import BackgroundImage from "gatsby-background-image"
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      mugshot: file(relativePath: { eq: "stuart-headshot.jpg" }) {
+      mugshot: file(relativePath: { eq: "images/stuart-headshot.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 320) {
             ...GatsbyImageSharpFluid

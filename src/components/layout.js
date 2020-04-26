@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
         </main>
       </div>
       <footer
-        style={{ backgroundColor: `#653c28`, color: `#d8d4d3`, width: `100%` }}
+        style={{ backgroundColor: `#2d3c5e`, color: `#d8d4d3`, width: `100%` }}
       >
         <div
           style={{
