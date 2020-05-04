@@ -11,7 +11,7 @@
     "@fortawesome/react-fontawesome": "^0.1.9",
     "gatsby": "^2.19.45",
     "gatsby-background-image": "^1.1.1",
-    "gatsby-cli": "^2.11.21",
+    "gatsby-cli": "^2.12.7",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-catch-links": "^2.2.4",
     "gatsby-plugin-manifest": "^2.2.48",
