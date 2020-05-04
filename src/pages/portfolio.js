@@ -29,7 +29,7 @@ export const query = graphql`
     ) {
       edges {
         node {
-          excerpt
+          excerpt(pruneLength: 100)
           fields {
             slug
           }

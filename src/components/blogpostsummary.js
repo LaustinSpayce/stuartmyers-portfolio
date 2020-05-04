@@ -31,7 +31,7 @@ const BlogPostSummary = (props) => {
   return (
     <article key={props.node.fields.slug} className="p-2 sm:w-auto md:w-1/2 lg:w-1/3">
       {fluidImg}
-      <div className="w-11/12 m-auto bg-white p-2 relative -mt-8 left-0">
+      <div className="w-11/12 m-auto bg-white p-2 relative -mt-8 left-0 shadow md:h-48">
         <header>
           <h3 className="mb-1">
             <Link style={{ boxShadow: `none` }} to={link}>
