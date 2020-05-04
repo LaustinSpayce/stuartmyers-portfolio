@@ -17,15 +17,6 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons"
 
-const cardStyle = {
-  background: `#41494b`,
-  margin: `0.25rem`,
-  color: `#D8D4D3`,
-  padding: `1rem`,
-  height: `300px`,
-  borderRadius: `25px`,
-}
-
 const socialMediaIconStyle = {
   margin: `0 0.25em`,
   color: `#2d3c5e`,
@@ -104,7 +95,7 @@ const IndexPage = () => (
         style={{ textAlign: "center" }}
       >
         <div className="col-span-1">
-          <div style={cardStyle}>
+          <div className="md:h-64 rounded-2xl bg-cardGray text-textOffWhite shadow m-1 p-4">
             <FontAwesomeIcon
               icon={faServer}
               size="2x"
@@ -119,7 +110,7 @@ const IndexPage = () => (
           </div>
         </div>
         <div className="col-span-1">
-          <div style={cardStyle}>
+          <div className="md:h-64 bg-cardGray rounded-2xl text-textOffWhite shadow m-1 p-4">
             <FontAwesomeIcon
               icon={faPaintBrush}
               size="2x"
@@ -134,7 +125,7 @@ const IndexPage = () => (
           </div>
         </div>
         <div className="col-span-1">
-          <div style={cardStyle}>
+          <div className="md:h-64 bg-cardGray rounded-2xl text-textOffWhite shadow m-1 p-4">
             <FontAwesomeIcon
               icon={faHeadphones}
               size="2x"
