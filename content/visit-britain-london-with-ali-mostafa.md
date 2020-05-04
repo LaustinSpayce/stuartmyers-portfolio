@@ -1,5 +1,5 @@
 ---
-title: "Visit Britain - London with Ali Mostafa"
+title: "Visit Britain - London"
 date: "2012-05-01"
 path: "visit-britain-london"
 ---

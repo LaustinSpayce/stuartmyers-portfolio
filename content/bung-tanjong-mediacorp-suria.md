@@ -1,5 +1,5 @@
 ---
-title: "Bunga Tanjong (Mediacorp Suria)"
+title: "Bunga Tanjong"
 date: "2016-03-01"
 coverImage: "./images/bunga-tanjong-hd-ep-box-cover-mcbc0160216007030177-20160518132619.jpg"
 path: "bunga-tanjong"

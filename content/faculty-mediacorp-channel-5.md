@@ -1,5 +1,5 @@
 ---
-title: "Faculty (Mediacorp Channel 5)"
+title: "Faculty"
 date: "2017-01-31"
 path: "faculty"
 ---

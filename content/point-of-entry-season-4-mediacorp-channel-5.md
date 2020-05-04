@@ -1,5 +1,5 @@
 ---
-title: "Point of Entry Season 4 (Mediacorp Channel 5)"
+title: "Point of Entry S4"
 date: "2014-03-20"
 path: "point-of-entry"
 ---

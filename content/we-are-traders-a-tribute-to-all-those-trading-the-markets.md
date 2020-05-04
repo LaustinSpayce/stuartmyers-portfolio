@@ -1,5 +1,5 @@
 ---
-title: "We Are Traders - A Tribute to All Those Trading The Markets"
+title: "We Are Traders"
 date: "2011-06-01"
 path: "we-are-traders"
 ---

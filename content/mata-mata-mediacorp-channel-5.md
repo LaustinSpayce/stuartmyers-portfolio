@@ -1,5 +1,5 @@
 ---
-title: "Mata Mata (Mediacorp Channel 5)"
+title: "Mata Mata"
 date: "2017-03-01"
 path: "mata-mata"
 ---
