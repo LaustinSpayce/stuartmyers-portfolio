@@ -11,9 +11,11 @@ const Portfolio = ({ data }) => {
     <Layout>
       <SEO title="Portfolio" />
       <h1>Portfolio</h1>
-      {posts.map(({ node }, index) => {
-        return <BlogPostSummary node={node} key={index} />
-      })}
+      <div className="flex flex-row items-stretch content-start flex-wrap">
+        {posts.map(({ node }, index) => {
+          return <BlogPostSummary node={node} key={index} />
+        })}
+      </div>
     </Layout>
   )
 }
@@ -38,7 +40,7 @@ export const query = graphql`
             description
             coverImage {
               childImageSharp {
-                fluid(maxWidth: 920, maxHeight: 320) {
+                fluid(maxWidth: 720, maxHeight: 400) {
                   ...GatsbyImageSharpFluid
                 }
               }
