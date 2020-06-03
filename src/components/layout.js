@@ -34,7 +34,9 @@ const Layout = ({ children }) => {
         }}
       >
         <main>
-          <div className="container mx-auto">{children}</div>
+          <div className="container mx-auto">
+            {children}
+            </div>
         </main>
       </div>
       <footer

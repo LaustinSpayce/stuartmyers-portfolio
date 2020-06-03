@@ -227,7 +227,7 @@ html {
 }
 body {
   color: #41494b;
-  font-family: Lora, georgia, serif;
+  font-family: ManropeBold, georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -693,12 +693,23 @@ pre tt:after {
 .skills-list-item {
   display: inline-block;
   margin: 0.25rem 0.25rem;
-  padding: 0.125rem 0.5rem 0.2rem 0.5rem;
+  padding: 0.125rem 0.5rem 0.125rem 0.5rem;
   border-radius: 1em;
   border: solid 3px #2d3c5e;
 }
 
 .skills-list-item:hover {
+  background-color: #2d3c5e;
+  color: #d8d4d3;
+}
+
+.button {
+  padding: 0.125rem 0.5rem 0.125rem 0.5rem;
+  border: solid 3px #2d3c5e;
+  border-radius: 0.25em;
+}
+
+.button:hover {
   background-color: #2d3c5e;
   color: #d8d4d3;
 }

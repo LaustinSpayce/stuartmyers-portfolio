@@ -28,7 +28,7 @@ const SecondPage = () => (
       <p>
         {/* TODO: Make this look like a button! 
             TODO: Have the footer stick to the bottom on this page.*/}
-        <button type="submit">Send</button>
+        <button type="submit" className="button">Send</button>
       </p>
     </form>
   </Layout>
