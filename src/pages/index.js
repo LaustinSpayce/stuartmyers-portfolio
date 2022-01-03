@@ -146,6 +146,7 @@ const IndexPage = () => (
     <section style={{ margin: "5rem 0" }}>
       <h1 style={{ textAlign: "center" }}>Tech Used</h1>
       <ul className="skills-list">
+        <li className="skills-list-item">Golang</li>
         <li className="skills-list-item">JavaScript</li>
         <li className="skills-list-item">Python</li>
         <li className="skills-list-item">Ruby</li>

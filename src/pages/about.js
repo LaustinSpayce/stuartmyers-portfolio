@@ -14,6 +14,7 @@ const About = () => (
     <p>I am passionate about building programmes that are a joy to use.</p>
     <h3>Some of the cool stuff I use for programming:</h3>
     <ul>
+      <li>Golang</li>
       <li>Javascript</li>
       <li>node.js</li>
       <li>react</li>
@@ -23,6 +24,7 @@ const About = () => (
     </ul>
     <h3>Some of my other skills:</h3>
     <ul>
+      <li>Testing</li>
       <li>Pro Tools</li>
       <li>Dialogue and sound effects Editing</li>
       <li>Reason</li>

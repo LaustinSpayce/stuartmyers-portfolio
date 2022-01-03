@@ -3,7 +3,7 @@ title: "ST-808 Drum Machine"
 date: "2020-03-16"
 coverImage: "./images/st-808inaction.png"
 path: "st-808"
-description: "A web-based retro drum machine based on classic drum machines such as the Roland TR-808, TR909, and Akai MPC-3000"
+description: "A web-based retro drum machine based on classic drum machines."
 ---
 
 The ST-808 is a web-based retro drum machine, loosely inspired by classic drum machines and technologies such as the Roland TR-808, TR-909 and Akai MPC-3000.
