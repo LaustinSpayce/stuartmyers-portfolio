@@ -1,5 +1,5 @@
 ---
-title: "Taslishar.net - an unofficial Flesh and Blood online client"
+title: "Talishar.net - an unofficial Flesh and Blood online client"
 date: "2022-09-09"
 coverImage: "./images/talishar-header.png"
 path: "talishar-dot-net"
