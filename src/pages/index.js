@@ -3,6 +3,7 @@ import Image from "../components/image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import "@fortawesome/fontawesome-svg-core/styles.css"
 import {
   faServer,
   faPaintBrush,
@@ -100,7 +101,6 @@ const IndexPage = () => (
               icon={faServer}
               size="2x"
               style={{ margin: `0.5rem 0 1rem 0` }}
-              width="0"
             />
             <h2>Development</h2>
             <p>
@@ -115,7 +115,6 @@ const IndexPage = () => (
               icon={faPaintBrush}
               size="2x"
               style={{ margin: `0.5rem 0 1rem 0` }}
-              width="0"
             />
             <h2>Site Design</h2>
             <p>
@@ -130,7 +129,6 @@ const IndexPage = () => (
               icon={faHeadphones}
               size="2x"
               style={{ margin: `0.5rem 0 1rem 0` }}
-              width="0"
             />
             <h2>Audio Work</h2>
             <p>
@@ -151,6 +149,7 @@ const IndexPage = () => (
         <li className="skills-list-item">Python</li>
         <li className="skills-list-item">Ruby</li>
         <li className="skills-list-item">HTML</li>
+        <li className="skills-list-item">Redux</li>
         <li className="skills-list-item">CSS</li>
         <li className="skills-list-item">git</li>
         <li className="skills-list-item">node.js</li>

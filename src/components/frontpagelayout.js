@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import "@fortawesome/fontawesome-svg-core/styles.css"
 import "./layout.css"
 
 const FrontPageLayout = ({ children }) => {

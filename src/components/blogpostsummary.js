@@ -22,7 +22,6 @@ const BlogPostSummary = (props) => {
           icon={faLaptopCode}
           size="4x"
           style={{ color: `white` }}
-          width="0"
           className="text-center align-middle"
         />
       </div>
